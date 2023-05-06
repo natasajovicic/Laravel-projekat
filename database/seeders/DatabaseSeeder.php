@@ -9,15 +9,11 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
+
     public function run()
     {
         //$this->call(RollerSeeder::class);
-         //$this->call(RezervacijaSeeder::class);
+        //$this->call(RezervacijaSeeder::class);
         User::truncate();
         Roller::truncate();
         Rezervacija::truncate();
@@ -28,6 +24,7 @@ class DatabaseSeeder extends Seeder
             "boja"=>"Siva",
             "materijal"=>"Vestacki materijal",
             "stanje"=>"Novo",
+            "test"=>"test01"
         ]);
 
         $array=explode(" ",$user->name);
