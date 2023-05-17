@@ -12,13 +12,15 @@ class IzmenaTabeleRollers extends Migration
      * @return void
      */
     public function up()
-    {
+    {   //preimenuj kolonu
         Schema::table('rollers',function (Blueprint $table){
             $table->renameColumn('stanje','STANJE');
         });
+        //promena strukture(phpmyadmin)
         Schema::table('rollers', function (Blueprint $table) {
             $table->string('boja', 50)->change();
         });
+        //dodavanje nove tabele
         Schema::table('rollers',function (Blueprint $table){
             $table->string('test');
         });
@@ -32,8 +34,8 @@ class IzmenaTabeleRollers extends Migration
     public function down()
     {
         Schema::table('rollers',function (Blueprint $table){
-            $table->dropColumn('test');
-          $table->renameColumn('STANJE','stanje');
+            $table->dropColumn('test'); //brisanje
+          $table->renameColumn('STANJE','stanje'); //vraca ime staro
           });
     }
 }

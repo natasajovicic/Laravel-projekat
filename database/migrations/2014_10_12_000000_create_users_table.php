@@ -11,6 +11,7 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
+    //up - kreiraj tabelu sa odredjenim poljima
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
@@ -29,6 +30,7 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
+    //down - revertuj tabelu
     public function down()
     {
         Schema::dropIfExists('users');

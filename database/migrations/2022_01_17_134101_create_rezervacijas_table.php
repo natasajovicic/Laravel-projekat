@@ -20,8 +20,8 @@ class CreateRezervacijasTable extends Migration
             $table->date('datum_preuzimanja');
             $table->integer('brDana');
             $table->string('kontakt');
-            $table->foreignId('roller_id');
-            $table->foreignId('user_id');
+            $table->foreignId('roller_id'); //spoljni kljuc
+            $table->foreignId('user_id'); //spoljni kljuc
             $table->timestamps();
         });
     }

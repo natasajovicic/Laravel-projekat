@@ -10,6 +10,8 @@ class Roller extends Model
     protected $fillable = [
         'velicina', 'boja', 'materijal','stanje',
     ];
+
+    //veza sa Rezervacija modelom
     use HasFactory;
     public function rezervacijas(){
 

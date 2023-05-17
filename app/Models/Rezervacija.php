@@ -20,6 +20,8 @@ class Rezervacija extends Model
 ];
     //use HasFactory;
     public $timestamps = true;
+
+    //veze prema Rolerima i Useru
     public function roller(){
         return $this->belongsTo(Roller::class);
     }
