@@ -37,5 +37,5 @@ class IzmenaTabeleRollers extends Migration
             $table->dropColumn('test'); //brisanje
           $table->renameColumn('STANJE','stanje'); //vraca ime staro
           });
-    }
+    } 
 }

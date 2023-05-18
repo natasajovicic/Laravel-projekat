@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             "boja"=>"Siva",
             "materijal"=>"Vestacki materijal",
             "stanje"=>"Novo",
-            "test"=>"test01"
+            
         ]);
 
         $array=explode(" ",$user->name);
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
             "datum_preuzimanja"=>"2021-03-02",
             "brDana"=>"3",
             "kontakt"=> "0631111111",
-            "roller_id"=> $roller->id, //"1"
+            "roller_id"=> "1",
             "user_id"=> $user->id,
         ]);
     }
