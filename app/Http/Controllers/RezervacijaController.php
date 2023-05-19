@@ -73,7 +73,7 @@ class RezervacijaController extends Controller
     public function show($id)
     {
         $rez = Rezervacija::find($id);
-        return view('rezervacije.show')->with('rez',$rez);
+        return view('rez.show')->with('rez',$rez);
     }
 
     /**
@@ -85,7 +85,7 @@ class RezervacijaController extends Controller
     public function edit($id)
     {
         $rez = Rezervacija::find($id);
-        return view('rezervacije.edit')->with('rez',$rez);
+        return view('rez.edit')->with('rez',$rez);
     }
 
     /**

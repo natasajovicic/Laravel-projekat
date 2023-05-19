@@ -13,6 +13,7 @@
 
         {{Form::text('prezime','', ['class'=>'form-control','placeholder'=>'prezime'])}}
     </div>
+    <div class="form-group">
         {{Form::label('datum_preuzimanja','Datum preuzimanja')}}
 
         {{ Form::date('datum_preuzimanja', '', ['class'=>'form-control','placeholder'=>'datum_preuzimanja'])}}
@@ -37,7 +38,8 @@
 
         {{Form::text('user_id','', ['class'=>'form-control','placeholder'=>'user_id'])}}
     </div>
+    <br>
     {{Form::submit('Posalji',['class'=>'btn btn-primary'])}}
-{!! Form::close() !!}
+    {!! Form::close() !!}
 
 @endsection
